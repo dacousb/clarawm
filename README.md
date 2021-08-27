@@ -3,6 +3,8 @@
 
 clarawm is designed to be a simple tiling window manager, fast and with a light and simple code base, so that anyone can understand the code.
 
+![screenshot](image.png)
+
 ## Shortcuts (keys)
 
 The default configured modifier is Mod4 (⌘). This can be combined with the following keys to achieve different results:
