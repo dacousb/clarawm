@@ -1,7 +1,7 @@
 # clarawm
-> *a simple tiling window manager*
+> *a simple tiling/floating window manager*
 
-clarawm is designed to be a simple tiling window manager, fast and with a light and simple code base, so that anyone can understand the code.
+clarawm is designed to be a simple tiling/floating window manager, fast and with a light and simple code base, so that anyone can understand the code.
 
 ![screenshot](image.png)
 
@@ -25,6 +25,7 @@ The available modes (toggleable with Mod4+m) are:
 
 ## To do
 Looking to get involved in the project or just know what do clarawm need to improve? Here it is:
+- Fix bugs in tiling mode, which detects hidden windows.
 - Better tiling (vertical and horizontal).
 - Interactive tiling.
 - More information on the top menu.
