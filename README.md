@@ -29,6 +29,5 @@ Looking to get involved in the project or just know what do clarawm need to impr
 - Interactive tiling.
 - More information on the top menu.
 - Try to introduce virtual workspaces.
-- Fix the crash of the window manager when spaming *close* on the top menu.
 
 Note: clarawm is not intended to replace other window managers, I was just looking for a clean and simple manager for me.

@@ -104,6 +104,8 @@ void tile()
                               (n == 2) ? 0 : screen->width / (n - 1) * i, 16,
                               (n == 2) ? screen->width : screen->width / (n - 1), screen->height - 16);
     }
+    if (wins)
+        XFree(wins);
 }
 
 int main(void)
@@ -130,8 +132,7 @@ int main(void)
         if (wm_mode == tiling)
             tile();
 
-        XDestroyWindow(dpy, menu);
-        draw_menu();
+        XClearWindow(dpy, menu);
 
         char buff[12];
         sprintf(buff, "clarawm %s", (wm_mode == tiling) ? "[]=" : "<><");
