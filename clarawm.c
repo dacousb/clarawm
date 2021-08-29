@@ -101,7 +101,7 @@ void tile()
     {
         if (wins[i] != menu)
             XMoveResizeWindow(dpy, wins[i],
-                              (n == 2) ? 0 : screen->width / (n - 1) * i, 16,
+                              (n == 2) ? 0 : screen->width / (n - 1) * (i - 1), 16,
                               (n == 2) ? screen->width : screen->width / (n - 1), screen->height - 16);
     }
     if (wins)
