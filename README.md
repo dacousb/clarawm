@@ -1,7 +1,7 @@
 # clarawm
-> *a simple tiling/floating window manager*
+> *a simple floating window manager*
 
-clarawm is designed to be a simple tiling/floating window manager, fast and with a light and simple code base, so that anyone can understand the code.
+clarawm is designed to be a simple floating (with drag and drop tiling) window manager, fast and with a light and simple code base, so that anyone can understand the code.
 
 ![screenshot](image.png)
 
@@ -15,20 +15,12 @@ The default configured modifier is Mod4 (⌘). This can be combined with the fol
 | ⌘ | d      | Open dmenu    |
 | ⌘ | q      | Close window  |
 | ⌘ | k      | Kill wm       |
-| ⌘ | m      | Change mode   |
 | ⌘ | MouseL | Move window   |
 | ⌘ | MouseR | Resize window |
 
-The available modes (toggleable with Mod4+m) are:
-- `[]=` Tiling
-- `<><` Floating
-
 ## To do
 Looking to get involved in the project or just know what do clarawm need to improve? Here it is:
-- Fix bugs in tiling mode, which detects hidden windows.
-- Better tiling (vertical and horizontal).
-- Interactive tiling.
-- More information on the top menu.
+- Create a true tiling mode.
 - Try to introduce virtual workspaces.
 
 Note: clarawm is not intended to replace other window managers, I was just looking for a clean and simple manager for me.
