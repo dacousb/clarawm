@@ -12,6 +12,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include "clarawm/config.h"
+
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
 Display *dpy;
@@ -23,9 +25,6 @@ XWindowAttributes attr;
 XKeyEvent key;
 XButtonEvent start;
 XEvent ev;
-
-static char *dmenu[] = {"dmenu_run", NULL};
-static char *xterm[] = {"xterm", NULL};
 
 void spawn(char **args)
 {
@@ -70,12 +69,13 @@ void borders()
     XQueryTree(dpy, root, &d1, &d2, &wins, &n);
     for (int i = 0; i < n; i++)
     {
-        set_color((wins[i] == start.subwindow) ? "#1b496e" : "#7a7a7a");
+        set_color((wins[i] == start.subwindow) ? border_main : border_sec);
         XSetWindowBorder(dpy, wins[i], color.pixel);
     }
     if (wins)
         XFree(wins);
 }
+
 
 int main(void)
 {
@@ -101,9 +101,9 @@ int main(void)
         {
             key = ev.xkey;
             if (key.keycode == XKeysymToKeycode(dpy, XK_Return))
-                spawn(xterm);
+                spawn(terminal);
             else if (key.keycode == XKeysymToKeycode(dpy, XK_D))
-                spawn(dmenu);
+                spawn(launcher);
             else if (key.keycode == XKeysymToKeycode(dpy, XK_Q))
             {
                 if (ev.xbutton.subwindow != None)
