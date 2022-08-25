@@ -5,6 +5,17 @@ clarawm is designed to be a simple floating (with drag and drop tiling) window m
 
 ![screenshot](image.png)
 
+# Build and Install
+Clone this repo
+```
+git clone https://github.com/dacousb/clarawm
+```
+Run the install script (will ask for root permissions)
+```
+sh install.sh
+``` 
+The config file will be in `~/.config/clarawm/config.h`
+
 ## Shortcuts (keys)
 
 The default configured modifier is Mod4 (⌘). This can be combined with the following keys to achieve different results:
