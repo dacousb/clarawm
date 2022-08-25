@@ -11,8 +11,8 @@ The default configured modifier is Mod4 (⌘). This can be combined with the fol
 
 |   | Key    | Action        |
 |---|--------|---------------|
-| ⌘ | Return | Open xterm    |
-| ⌘ | d      | Open dmenu    |
+| ⌘ | Return | Open terminal |
+| ⌘ | d      | Open launcher |
 | ⌘ | q      | Close window  |
 | ⌘ | k      | Kill wm       |
 | ⌘ | MouseL | Move window   |
